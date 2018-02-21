@@ -92,9 +92,23 @@ function Dot(tempX, tempY, tempSpeed, tempSpeedY) {
 	this.speed = tempSpeed;
 	this.speedY = tempSpeedY;
 
-	this.alph = random(100, 255);
-	this.c = color(0, 0, 0, this.alph);
+	this.alph = random(50, 255);
+	//this.c = color(0, 0, 0, this.alph);
 	
+
+	var clist = ['black', 'gray', 'red']
+	var mc = random(clist)
+	if (mc == 'black') {
+	    this.c = color(0, 0, 0, this.alph);
+	}
+
+	if (mc == 'gray') {
+	    this.c = color(120, 120, 120, this.alph);
+	}
+
+	if (mc == 'red') {
+	    this.c = color(255, 0, 0, this.alph);
+	}
 
 	this.eleSize = random(10, 60);
 }
