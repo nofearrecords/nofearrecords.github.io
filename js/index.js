@@ -13,7 +13,7 @@ var randNums = [];
 
 
 function preload() {
-	music = loadSound('../music/test.mp3'); 
+	music = loadSound('../music/NoFearRecordsDemo.mp3'); 
 }
 
 function setup() {
