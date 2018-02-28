@@ -10,7 +10,12 @@ function startTime() {
     s = checkTime(s);
     ms = checkTime(ms);
     
-    document.getElementById('clock').innerHTML = h + ":" + m + ":" + s + ":" + ms;
+    try {
+	document.getElementById('clock').innerHTML = h + ":" + m + ":" + s + ":" + ms;
+    }
+    catch(e) {
+	
+    }
     var t = setTimeout(startTime, 30);
 }
 
