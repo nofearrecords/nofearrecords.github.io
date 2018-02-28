@@ -31,12 +31,15 @@
 	<script type="text/javascript" src="js/p5.dom.js"></script>
 	<script type="text/javascript" src="js/p5.sound.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/clock.js"></script>
     </head>
-    <body>
+    <body onload = "startTime()">
 	<!-- div for logo. -->
 	<div class="logo-div"><img class="logo-img" src="img/logo/3_white_transparent.png" /></div>	
 
 	<!-- div for loading... -->
-	<div id="p5_loading" class="loading-div"><img class="loading-img" src="img/loading.gif" /></div>
+	<div id="p5_loading" class="loading-div">
+	    <div id="clock"></div>
+	</div>
     </body>
 </html>
