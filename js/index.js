@@ -2,7 +2,7 @@ var myCanvas;
 var vol;
 
 var dots = [];
-var numDots = 300;
+var numDots = 250;
 
 var t = 0;
 var time = 0;
