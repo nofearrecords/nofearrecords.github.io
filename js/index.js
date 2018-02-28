@@ -2,7 +2,7 @@ var myCanvas;
 var vol;
 
 var dots = [];
-var numDots = 250;
+var numDots = 300;
 
 var t = 0;
 var time = 0;
@@ -62,7 +62,7 @@ function draw() {
 	push();
 		translate(0, 0);
 		noStroke();
-		fill(255);
+		fill(0);
 		rect(0, 0, width, height);
 	pop();
 
@@ -92,26 +92,34 @@ function Dot(tempX, tempY, tempSpeed, tempSpeedY) {
 	this.speed = tempSpeed;
 	this.speedY = tempSpeedY;
 
-	this.alph = random(50, 255);
-	this.c = color(0, 0, 0, this.alph);
-	
+	this.alph = random(255, 255);
+	this.c = color(255, 255, 255, this.alph);
+	//this.c = color(random(1,255),random(1,255),random(1,255), this.alph);
 	/*
-	var clist = ['black', 'gray', 'red']
+	var clist = ['g0', 'g1', 'g2', 'g3', 'g4'];
 	var mc = random(clist)
-	if (mc == 'black') {
-	    this.c = color(0, 0, 0, this.alph);
+	if (mc == 'g0') {
+	    this.c = color(166, 124, 0, this.alph);
 	}
 
-	if (mc == 'gray') {
-	    this.c = color(120, 120, 120, this.alph);
+	if (mc == 'g1') {
+	    this.c = color(191, 155, 48, this.alph);
 	}
 
-	if (mc == 'red') {
-	    this.c = color(255, 0, 0, this.alph);
+	if (mc == 'g2') {
+	    this.c = color(255, 191, 0, this.alph);
+	}
+
+	if (mc == 'g3') {
+	    this.c = color(255, 207, 64, this.alph);
+	}
+
+	if (mc == 'g4') {
+	    this.c = color(255, 220, 115, this.alph);
 	}
 	*/
 
-	this.eleSize = random(10, 60);
+	this.eleSize = random(1, 10);
 }
 
 Dot.prototype.display = function() {
