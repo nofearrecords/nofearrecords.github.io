@@ -32,8 +32,8 @@ function setup() {
 
 	// add an object inside array	
 	for (var i = 0; i < numDots; i++) {
-		//dots[i] = new Dot(180, 0, 0.5+random(0.95,1), 0.5);
-		dots[i] = new Dot(random(0, 220), random(0, 90), random(0.5, 2), random(0.5, 2));
+		dots[i] = new Dot(180, 0, 0.5+random(0.95,1), 0.5);
+		//dots[i] = new Dot(random(0, 220), random(0, 90), random(0.5, 2), random(0.5, 2));
 		t += 0.01;
 		time += 0.001;
 		getT[i] = t;
@@ -62,7 +62,7 @@ function draw() {
 	push();
 		translate(0, 0);
 		noStroke();
-		fill(0);
+		fill(255);
 		rect(0, 0, width, height);
 	pop();
 
@@ -92,8 +92,8 @@ function Dot(tempX, tempY, tempSpeed, tempSpeedY) {
 	this.speed = tempSpeed;
 	this.speedY = tempSpeedY;
 
-	this.alph = random(255, 255);
-	this.c = color(255, 255, 255, this.alph);
+	this.alph = random(1, 255);
+	this.c = color(0, 0, 0, this.alph);
 	//this.c = color(random(1,255),random(1,255),random(1,255), this.alph);
 	/*
 	var clist = ['g0', 'g1', 'g2', 'g3', 'g4'];
@@ -119,7 +119,7 @@ function Dot(tempX, tempY, tempSpeed, tempSpeedY) {
 	}
 	*/
 
-	this.eleSize = random(1, 10);
+	this.eleSize = random(1, 7);
 }
 
 Dot.prototype.display = function() {
