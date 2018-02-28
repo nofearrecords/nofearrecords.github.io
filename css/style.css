@@ -22,11 +22,11 @@ body {
 
 .loading-img {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 240px;
     top: 50%;
     left: 50%;
-    margin: -75px 0 0 -75px;
+    margin: -120px 0 0 -150px;
 }
 
 .logo-div {
