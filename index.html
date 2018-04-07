@@ -36,7 +36,7 @@
 	<link href="img/logo/logo.ico" rel="icon" type="image/x-icon" />
 
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
 	
 	<!-- JS -->
 	<script type="text/javascript" src="js/p5.js"></script>
@@ -44,14 +44,40 @@
 	<script type="text/javascript" src="js/p5.sound.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/clock.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
     </head>
     <body onload="startTime()">
+
 	<!-- div for logo. -->
 	<div class="logo-div"><img class="logo-img" src="img/logo/3_white_transparent.png" /></div>	
+
+
+
+	<div id="nav_deactivate">
+		<div class="bar" onclick="myFunctionMenu()">
+			<div id="bar1_deactivate"></div>
+			<div id="bar2_deactivate"></div>
+			<div id="bar3_deactivate"></div>
+		</div>
+		<div id="nav_content" >
+			<a href='http://www.nofearofficial.com/'><h1>HOME</h1></a>
+			<h1>ABOUT<h1>
+			<h1>CONTACT<h1>
+			<h1>ARTIST<h1>
+			<a href="https://twitter.com/NOFEAR_RECORDS" target="_blank"><img class="sns" src="img/twitter.png" /></a>
+			<a href="#"><img class="sns" src="img/youtube.png" /></a>
+			<a href="#"><img class="sns" src="img/facebook.png" /></a>
+			<a href="https://www.instagram.com/nofear_records/" target="_blank"><img class="sns" src="img/instagram.png" /></a>
+
+		</div>
+	</div>
+
 
 	<!-- div for loading... -->
 	<div id="p5_loading" class="loading-div">
 	    <div id="clock"></div>
 	</div>
     </body>
+
+
 </html>
