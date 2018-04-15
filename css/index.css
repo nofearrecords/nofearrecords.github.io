@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -32,16 +32,15 @@ body {
 
 #clock {
     position:absolute;
-    width:100px;
-    height:100px;
+    width:200px;
+    height:200px;
     top:50%;
     left:50%;
     background-color: #000;
     color:#fff;
-    margin:-50px 0 0 -50px;
+    margin:-100px 0 0 -100px;
     text-align:center;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo-div {
@@ -75,19 +74,17 @@ body {
 .bar {
     display: inline-block;
     cursor: pointer;
-
     float:right;
-    padding-top: 50px;
-    padding-right: 50px;
+    margin-top: 50px;
+    margin-right: 40px;
 }
 
 #nav_content {
     color : #333;
     position: absolute;
     width : 100%;
-    top: 30%;
+    top: 25%;
     text-align: center;
-    //background-color:red;
     visibility: hidden;
 }
 
@@ -122,44 +119,44 @@ body {
 }
 
 .sns {
-    width:35px;
-    height:35px;
+    width:34px;
+    height:34px;
     margin:5px;
 }
 
 #bar1_deactivate, #bar2_deactivate, #bar3_deactivate {
     width: 30px;
-    height: 4px;
+    height: 2px;
     background-color: #fff;
-    margin: 5px 0;
-    transition: 0.8s;
+    margin: 8px 0;
+    transition: 1s;
 }
 
 #bar1_activate {
-    width: 32px;
-    height: 4px;
+    width: 30px;
+    height: 2px;
     background-color: #333;
-    margin: 5px 0;
-    transition: 0.8s;
-    -webkit-transform: rotate(-45deg) translate(-7px, 7px);
-    transform: rotate(-45deg) translate(-7px, 6px);
+    margin: 8px 0;
+    transition: 1s;
+    -webkit-transform: rotate(-45deg) translate(-6px, 7px);
+    transform: rotate(-45deg) translate(-6px, 7px);
 }
 
 #bar2_activate {
     width: 30px;
-    height: 4px;
+    height: 2px;
     background-color: #333;
-    margin: 5px 0;
-    transition: 0.8s;
+    margin: 8px 0;
+    transition: 1s;
     opacity: 0;
 }
 
 #bar3_activate {
     width: 30px;
-    height: 4px;
+    height: 2px;
     background-color: #333;
-    margin: 5px 0;
-    transition: 0.8s;
-    -webkit-transform: rotate(45deg) translate(-6px, -6px);
-    transform: rotate(45deg) translate(-6px, -6px);
+    margin: 8px 0;
+    transition: 1s;
+    -webkit-transform: rotate(45deg) translate(-7px, -7px);
+    transform: rotate(45deg) translate(-7px, -7px);
 }

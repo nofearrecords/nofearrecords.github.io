@@ -9,6 +9,7 @@ function myFunctionMenu() {
         document.getElementById('bar2_deactivate').setAttribute('id', 'bar2_activate');
         document.getElementById('bar3_deactivate').setAttribute('id', 'bar3_activate');
         document.getElementById('nav_content').style.visibility = "visible";
+        document.body.style.overflow = "hidden";
         activate = 1;
     } else {
         document.getElementById('nav_activate').setAttribute('id', 'nav_deactivate');
@@ -16,7 +17,7 @@ function myFunctionMenu() {
         document.getElementById('bar2_activate').setAttribute('id', 'bar2_deactivate');
         document.getElementById('bar3_activate').setAttribute('id', 'bar3_deactivate');
         document.getElementById('nav_content').style.visibility = "hidden";
+        document.body.style.overflow = "visible";
         activate = 0;
     }
-
 }

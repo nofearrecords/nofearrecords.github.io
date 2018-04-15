@@ -6,7 +6,7 @@ function startTime() {
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
-    var ms = today.getMilliseconds();   
+    var ms = today.getMilliseconds();
 
     h = checkTime(h); 
     m = checkTime(m);
@@ -14,15 +14,15 @@ function startTime() {
     ms = checkTime(ms);
     
     try {
-	document.getElementById('clock').innerHTML = h + ":" + m + ":" + s + ":" + ms;
-	timer = setTimeout(startTime, 30);
-    }
-    catch(e) {
-	clearTimeout(timer);
+	    document.getElementById('clock').innerHTML =  "LOADING ..." + "</br>" + h + ":" + m + ":" + s + ":" + ms;
+	    timer = setTimeout(startTime, 40);
+    } catch(e) {
+	    clearTimeout(timer);
     }
 }
 
 function checkTime(i) {
+
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }

@@ -1,85 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>NOFEAR RECORDS Official website</title>
+		<title>NOFEAR RECORDS Official Website</title>
 
-	<!-- Open Graph Tags -->
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> 
+		<!-- Open Graph Tags -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-	<meta name="description" content="Worldwide R&B,Hiphop music record label." />
+		<meta name="description" content="Worldwide R&B, Hiphop music record label." />
 
-	<meta property="og:title" content="NOFEAR RECORDS Official website" />
-	<meta property="og:url" content="https://www.nofearofficial.com/" />
-	<meta property="og:image" content="http://nofearrecords.github.io/img/logo/logo_rectangle.png">
-	<meta property="og:description" content="Worldwide R&B,Hiphop music record label." />
+		<meta property="og:title" content="NOFEAR RECORDS Official Website" />
+		<meta property="og:url" content="http://www.nofearofficial.com/" />
+		<meta property="og:image" content="http://nofearrecords.github.io/img/logo/logo_rectangle.png">
+		<meta property="og:description" content="Worldwide R&B, Hiphop music record label." />
 
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@NOFEAR_RECORDS" />
-	<meta name="twitter:title" content="NOFEAR RECORDS Official website" />
-	<meta name="twitter:description" content="Worldwide R&B,Hiphop music record label." />
-	<meta property="twitter:image:src" content="http://nofearrecords.github.io/img/logo/logo_square.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@NOFEAR_RECORDS" />
+		<meta name="twitter:title" content="NOFEAR RECORDS Official Website" />
+		<meta name="twitter:description" content="Worldwide R&B, Hiphop music record label." />
+		<meta property="twitter:image:src" content="http://nofearrecords.github.io/img/logo/logo_square.png" />
 
-	<meta itemprop="name" content="NOFEAR RECORDS Official website" />
-	<meta itemprop="description" content="Worldwide R&B,Hiphop music record label." />
-	<meta itemprop="image" content="http://nofearrecords.github.io/img/logo/logo_square.png" />
+		<meta itemprop="name" content="NOFEAR RECORDS Official Website" />
+		<meta itemprop="description" content="Worldwide R&B, Hiphop music record label." />
+		<meta itemprop="image" content="http://nofearrecords.github.io/img/logo/logo_square.png" />
 
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+		<!-- Mobile Theme color -->
+		<meta name="theme-color" content="#000000">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#000000">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
 
-	<!-- Favicon -->
-	<link href="img/logo/logo.ico" rel="icon" type="image/x-icon" />
+		<!-- Favicon -->
+		<link href="img/logo/logo.ico" rel="icon" type="image/x-icon" />
 
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
-	
-	<!-- JS -->
-	<script type="text/javascript" src="js/p5.js"></script>
-	<script type="text/javascript" src="js/p5.dom.js"></script>
-	<script type="text/javascript" src="js/p5.sound.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/clock.js"></script>
-	<script type="text/javascript" src="js/menu.js"></script>
-
-	<!-- FONT -->
-	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    </head>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<!-- JS -->
+		<script type="text/javascript" src="js/p5.js"></script>
+		<script type="text/javascript" src="js/p5.dom.js"></script>
+		<script type="text/javascript" src="js/p5.sound.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/clock.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+	</head>
     <body onload="startTime()">
+		<!-- div for logo. -->
+		<div class="logo-div"> <img class="logo-img" src="img/logo/3_white_transparent.png" /> </div>	
 
-	<!-- div for logo. -->
-	<div class="logo-div"><img class="logo-img" src="img/logo/3_white_transparent.png" /></div>	
+		<!-- div for navigation. -->
+		<div id="nav_deactivate">
+			<div class="bar" onclick="myFunctionMenu()">
+				<div id="bar1_deactivate"></div>
+				<div id="bar2_deactivate"></div>
+				<div id="bar3_deactivate"></div>
+			</div>
+			<div id="nav_content" >
+				<a href='/'><h1 class="nav_list">HOME</h1></a>
+				<a href='artist.html'><h1 class="nav_list">ARTIST</h1></a>
+				<a href='#'><h1 class="nav_list">MUSIC</h1></a>
+				<a href='about.html'><h1 class="nav_list">ABOUT</h1></a>
+				<a href='contact.html'><h1 class="nav_list">CONTACT</h1></a>
+				<a href='#'><h1 class="nav_list">Shop</h1></a>
 
-
-
-	<div id="nav_deactivate">
-		<div class="bar" onclick="myFunctionMenu()">
-			<div id="bar1_deactivate"></div>
-			<div id="bar2_deactivate"></div>
-			<div id="bar3_deactivate"></div>
+				<a href="https://twitter.com/NOFEAR_RECORDS" target="_blank"><img class="sns" src="img/twitter_black.png" /></a>
+				<a href="#"><img class="sns" src="img/youtube_black.png" /></a>
+				<a href="#"><img class="sns" src="img/facebook_black.png" /></a>
+				<a href="https://www.instagram.com/nofear_records/" target="_blank"><img class="sns" src="img/instagram_black.png" /></a>
+				<a href="#" target="_blank"><img class="sns" src="img/soundcloud_black.png" /></a>
+			</div>
 		</div>
-		<div id="nav_content" >
-			<a href='/'><h1 class="nav_list">HOME</h1></a>
-			<a href='about.html'><h1 class="nav_list">ABOUT</h1></a>
-			<a href='contact.html'><h1 class="nav_list">CONTACT</h1></a>
-			<a href='artist.html'><h1 class="nav_list">ARTIST</h1></a>
 
-			<a href="https://twitter.com/NOFEAR_RECORDS" target="_blank"><img class="sns" src="img/twitter.png" /></a>
-			<a href="#"><img class="sns" src="img/youtube.png" /></a>
-			<a href="#"><img class="sns" src="img/facebook.png" /></a>
-			<a href="https://www.instagram.com/nofear_records/" target="_blank"><img class="sns" src="img/instagram.png" /></a>
-		</div>
-	</div>
-
-	<!-- div for loading... -->
-	<div id="p5_loading" class="loading-div">
-	    <div id="clock"></div>
-	</div>
+		<!-- div for loading... -->
+		<div id="p5_loading" class="loading-div"> <div id="clock"></div> </div>
     </body>
-
-
 </html>
