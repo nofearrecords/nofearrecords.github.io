@@ -124,7 +124,7 @@ a:active {
 #nav_deactivate {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 1%;
     z-index: 999;
 }
 
